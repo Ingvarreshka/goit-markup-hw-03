@@ -1,0 +1,129 @@
+:root {
+  --background-color-team: #f5f4fa;
+  --blue-color: #2196f3;
+  --title-color: #ffffff;
+  --primary-color: #ffffff;
+  --secondary-color: #212121;
+  --primary-background: #2f303a;
+
+  --text-primary: #212121;
+  --text-secondary: #757575;
+  --text-btn: #ffffff;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: auto;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+.nav-link:hover,
+.current {
+  color: var(--blue-color);
+}
+
+.main-section {
+  background-color: var(--primary-background);
+  text-align: center;
+}
+
+.main-title {
+  font-size: 44px;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.primary-button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--text-btn);
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: Raleway;
+  color: var(--text-primary);
+}
+
+.logo span {
+  color: var(--blue-color);
+}
+
+.contact-link {
+  color: var(--text-secondary);
+}
+
+.contact-link:hover {
+  color: var(--blue-color);
+}
+
+.title {
+  font-size: 36px;
+}
+
+.info-item {
+  color: var(--text-secondary);
+}
+
+.team {
+  background-color: var(--background-color-team);
+}
+
+.team-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.team-position {
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.portfolio-item-discription {
+  color: var(--text-secondary);
+}
+
+.secondary-button {
+  list-style: none;
+  color: var(--text-primary);
+  background-color: var(--background-color-team);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  color: var(--title-color);
+  background-color: var(--blue-color);
+}
+
+.footer-main {
+  background-color: var(--primary-background);
+}
+
+.footer-main a {
+  color: var(--title-color);
+}
+address {
+  font-style: normal;
+}
