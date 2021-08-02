@@ -11,6 +11,16 @@
   --text-btn: #ffffff;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Roboto", Arial, sans-serif;
   margin: auto;
@@ -21,18 +31,34 @@ body {
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
+}
+
+.header-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+.line {
+  border-bottom: 1px solid #ececec;
 }
 
 .nav-list {
   display: flex;
 }
 
+.filter-item {
+  display: flex;
+  margin-right: 8px;
+  text-align: center;
+}
+
 .filter-button {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-right: 8px;
   margin-bottom: 34px;
 }
@@ -43,6 +69,7 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--text-primary);
+  margin: 50px;
 }
 .nav-link:hover,
 .current {
@@ -55,9 +82,20 @@ ul {
 }
 
 .main-title {
+  padding-top: 200px;
+  padding-bottom: 280px;
   font-size: 44px;
   color: var(--title-color);
   text-align: center;
+  margin: auto;
+  width: 696px;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .primary-button {
@@ -74,6 +112,7 @@ ul {
   font-weight: 700;
   font-family: Raleway;
   color: var(--text-primary);
+  margin-left: 215px;
 }
 
 .logo span {
@@ -82,6 +121,7 @@ ul {
 
 .contacts-list {
   display: flex;
+  margin-left: auto;
 }
 
 .contact-link {
@@ -92,13 +132,37 @@ ul {
   color: var(--blue-color);
 }
 
+.about-us {
+  padding: 94px 215px;
+}
+
 .about-foto {
   display: flex;
+  justify-content: center;
+}
+
+.about-foto-card {
+  margin-right: 30px;
+}
+
+.team-card {
+  margin-right: 30px;
+  background-color: var(--primary-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .title {
+  font-weight: bold;
   font-size: 36px;
+  line-height: 42px;
   text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+
+.info-list {
+  display: flex;
 }
 
 .info-item {
@@ -107,6 +171,7 @@ ul {
 
 .team {
   background-color: var(--background-color-team);
+  padding: 94px 0px;
 }
 
 .team-list {
@@ -136,12 +201,23 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.portfolio-section {
+  padding: 94px;
+}
+
+.portfolio-item {
+  margin: 15px;
+}
+
 .portfolio-item-discription {
   color: var(--text-secondary);
 }
 
 .portfolio-list {
   display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 .secondary-button {
@@ -160,13 +236,17 @@ ul {
 
 .footer-main {
   background-color: var(--primary-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-main a {
   color: var(--title-color);
 }
+
 address {
   font-style: normal;
+  margin-left: 215px;
 }
 
 .footer {
