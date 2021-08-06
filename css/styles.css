@@ -31,13 +31,12 @@ ul {
   margin: 0 auto;
 }
 
-.page-header {
-}
-
 .container-header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .line {
@@ -46,18 +45,14 @@ ul {
 
 .nav-list {
   display: flex;
-  padding: 0px;
-  margin-left: 93px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
-.nav-item {
+.nav-item:not(:first-child) {
   margin-left: 50px;
 }
 
-.contacts-list-item {
-  margin-left: 50px;
+.section {
+  background-color: var(--primary-background);
 }
 
 /* страница портфолио */
@@ -137,6 +132,10 @@ ul {
   padding: 0px;
 }
 
+.contacts-list-header .contacts-list-item + .contacts-list-item {
+  margin-left: 50px;
+}
+
 .contacts-list-footer {
   padding: 0px;
   margin-left: 215px;
@@ -184,10 +183,12 @@ ul {
   margin: 0px;
 }
 
+/* studio page */
 .info-discription {
   width: 270px;
 }
 
+/* studio page */
 .container-info {
   padding: 94px 0 47px;
 }
