@@ -6,6 +6,7 @@
   --secondary-color: #212121;
   --primary-background: #2f303a;
   --footer-color-design: #ececec;
+  --border-portfolio: #eeeeee;
 
   --text-primary: #212121;
   --text-secondary: #757575;
@@ -31,6 +32,14 @@ ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* контейнер страницы */
@@ -75,15 +84,13 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  padding: 0;
 }
 
 /* link navigation header */
 
 .nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
   color: var(--text-primary);
   font-weight: 500;
   font-size: 14px;
@@ -97,8 +104,7 @@ ul {
 }
 
 .main-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0;
   background-color: var(--primary-background);
 
   text-align: center;
@@ -175,10 +181,10 @@ ul {
 }
 
 .title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
@@ -199,8 +205,6 @@ ul {
 .info-list {
   display: flex;
   justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
 }
 
 .info-title {
@@ -224,15 +228,19 @@ ul {
 
 .team-list {
   display: flex;
-  list-style: none;
   justify-content: space-between;
+}
+.team-discription {
+  padding: 20px 24px;
 }
 
 .team-name {
+  margin-bottom: 10px;
+
   font-size: 16px;
   font-weight: 500;
   color: var(--text-primary);
-  line-height: 1, 19;
+  line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -241,7 +249,7 @@ ul {
   color: var(--text-secondary);
   font-size: 16px;
   font-weight: 400;
-  line-height: 1, 19;
+  line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -254,11 +262,15 @@ ul {
 
 .portfolio-item-discription {
   color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-item {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-portfolio);
   border-top: none;
   background-color: var(--primary-color);
 }
